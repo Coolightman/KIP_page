@@ -1,0 +1,74 @@
+/* стили для любой ширины */
+.ceo figure{
+	max-width: 95%;
+	position: relative;
+	margin: 0 auto;
+}
+.ceo .figcapt_1{
+	position: absolute;
+	top: 0;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	background-color: rgba(50, 50, 50, .2);
+}
+.ceo .figcapt_2{
+	position: absolute;	
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.ceo .figcapt_1 p{
+	color: white;
+	padding-left: 2%;
+	padding-top: 10%;
+	width: 30%;
+}
+.ceo .figcapt_2 p{
+	color: white;	
+	text-align: right;
+	padding-right: 2%;
+	padding-bottom: 5%;
+}
+.specs{
+	margin: 20px auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+}
+.specs figure{
+	flex: 1 0 250px;
+	max-width: 250px;
+	line-height: 1;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+.specs img{
+	border-radius: 50%;
+	border: 1px solid rgb(220,220,220);
+}
+.specs figcaption p{
+	text-align: center;
+}
+
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 1023 пикселов и ниже */
+@media (max-width: 1023px) {
+	
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 800 пикселов и ниже */
+@media (max-width: 799px) {
+	.ceo .figcapt_1 p, .ceo .figcapt_2 p{
+		font-size: 1rem;
+	}	
+}
+/* стили для ширины меньше фаблетов */
+/* стили для ширины 549 пикселов и ниже */
+@media (max-width: 549px) {
+	.ceo .figcapt_1{
+		display: none;
+	}
+}

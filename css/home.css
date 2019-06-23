@@ -1,0 +1,127 @@
+article figure{
+	max-width: 375px;
+}
+.home article img{
+	border: 2px solid rgb(220,220,220);
+}
+.first_image{
+	position: relative;
+	margin-top: 10px;	
+}
+.first_image figcaption{
+	position: absolute;
+	top: 0;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .5);
+	color: #f5f5f5;
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.7em;
+	letter-spacing: 1px;
+	line-height: 2em;
+	padding-top: 50px;
+	opacity: 0;	
+	transition: all .2s linear;	
+}
+figure:hover.first_image  figcaption{
+	opacity: 1;
+}
+.first_ul li{
+	list-style: none;
+	background-image: url(../img/forList.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 0 10px;
+	line-height: 1.8em;
+	padding: 0 0 30px 40px;
+}
+.directions_bar{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.directions_bar figure{
+	flex: 1 0 150px;
+	position: relative;
+	margin: 20px 1% 0 1%;
+}
+.directions_bar img{
+	border: none;
+}
+.directions_bar figcaption{	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: table;
+	height: 98.5%;
+	width: 100%;		
+	background-color: rgba(0, 0, 0, .5);
+	transition: all .2s linear;
+}
+.directions_bar figcaption p{	
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: rgb(220,220,220);
+	font-family: Montserrat, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	padding: 5%;
+}
+.directions_bar figcaption:hover{	
+	background-color: rgba(0, 0, 0, .7);
+	color: white;
+}
+.anchor{
+	display: block;
+	position: relative;
+	top: 10px;
+	visibility: hidden;
+}
+.ul_1 li{
+	list-style: none;
+	line-height: 1.8;
+	background-image: url(../img/forList1.png);
+	background-repeat: no-repeat;
+	background-size: 24px 15px;
+	background-position: 0 15px;
+	padding-left: 40px;
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 800 пикселов и ниже */
+
+@media (max-width: 799px) {
+	.first_image{
+		display: none;
+	}
+}
+@media (max-width: 799px) {
+	.directions_bar figcaption p{
+		font-size: 1rem;
+	}	
+}
+@media (max-width: 549px) {
+	.first_image{
+		float: none;
+		margin: 10px auto;
+	}
+	.first_ul li{		
+		background-size: 17px 17px;
+		background-position: 0 6px;
+		line-height: 1.4em;
+		padding: 0 0 15px 30px;
+	}
+	.directions_bar{
+		display: block;
+	}
+	.directions_bar figure{	
+		margin: 10px auto;
+	}
+	.directions_bar figcaption p{
+		font-size: 1.4rem;
+	}	
+}

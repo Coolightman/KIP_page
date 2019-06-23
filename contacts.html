@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>	
+	<link rel="shortcut icon" href="img/GIAP_logo.png">
+	<meta charset="utf-8">
+	<title>Отдел КИПиА | Контакты</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Montserrat|Exo+2" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/import.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		
+		if ($(window).width() <= '449'){
+			$('.main_nav').hide();
+		}else{
+			$('.main_nav').show();
+		};
+
+		$('.mobile_nav_button').click(function(){
+			$('.main_nav').toggle();
+		});		
+		
+	});
+	</script>		
+</head>
+<body class="contacts">
+	<header>
+		<div class="container">
+			<div class="giap_logo">			
+			<figure>
+				<a href="http://giap.by"><img src="img/GIAP_logo.png" alt="Логотип GIAP_logo">
+				</a>
+				<figcaption><a href="http://giap.by">"ОАО" ГИАП</a></figcaption>
+			</figure>
+			</div>
+			<div class="name">				
+				<h1>Отдел КИПиА</h1>
+				<p>2006-2019</p>
+			</div>
+			<div class="mobile_nav_button">
+				<i class="fas fa-bars"></i>
+			</div>
+			<nav class="main_nav">
+				<a href="index.html" class="homeLink">Главная</a>
+				<a href="aboutUs.html" class="aboutUsLink">Проекты</a>
+				<a href="team.html" class="teamLink">Коллектив</a>
+				<a href="partners.html" class="partnersLink">Партнеры</a>
+				<a href="contacts.html" class="contactsLink">Контакты</a>
+			</nav>
+			<h2>Связаться с нами</h2>
+		</div>		
+	</header>
+	<article>
+		<div class="container">		
+				<p>Телефон: +375 (152) 74-40-13
+				<br>e-mail: kip@giap.by</p>
+				<h3>Местоположении и часы работы:</h3>
+				<figure class="fig_right">
+					<img src="img/giap_pic.gif" alt="giap_pic">
+				</figure>		
+				<p>Гродно, пр. Космонавтов, 56
+				<br>Понедельник - пятница 
+				<br>С 8:30 до 17:00
+				<br>Обед с 12:30 до 13:00</p>
+		<div class="barier"></div>
+		<div class="hide">
+			<h3>Карта:</h3>	
+			<div class="map_1">				
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa72a1d3dc51ba8697734cfabe4ed50c164d68ba2c7c3446a85e662d788aef48a&amp;width=960&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			<div class="map_2">				
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa72a1d3dc51ba8697734cfabe4ed50c164d68ba2c7c3446a85e662d788aef48a&amp;width=670&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			<div class="map_3">				
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa72a1d3dc51ba8697734cfabe4ed50c164d68ba2c7c3446a85e662d788aef48a&amp;width=300&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</div>		
+		</div>	
+	</article>	
+	<footer>
+		<div class="container copyright">			
+			<p><a href="https://github.com/Coolightman">Coolightman</a> &copy; 2019.  All Rights Reserved.</p>			
+		</div>
+	</footer>
+</body>
+</html>

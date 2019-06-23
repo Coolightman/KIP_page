@@ -1,0 +1,30 @@
+/* стили для любой ширины */
+.company{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.company figure{
+	flex: 1 0 120px;
+	margin: 5% 5%;
+	transition: all 0.2s;
+}
+.company figure:hover{
+	transform: scale(1.05);
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 1023 пикселов и ниже */
+@media (max-width: 1023px) {
+	
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 700 пикселов и ниже */
+@media (max-width: 699px) {
+
+}
+/* стили для ширины меньше фаблетов */
+/* стили для ширины 549 пикселов и ниже */
+@media (max-width: 549px) {
+
+}

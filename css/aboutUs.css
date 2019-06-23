@@ -1,0 +1,97 @@
+/* стили для любой ширины */
+.projects{
+	table-layout: fixed;
+	width: 100%;
+}
+table.projects td, table.projects th{
+	border: 1px solid #3366CC;
+	font-size: 1.2em;
+	font-family: Montserrat, sans-serif;
+	word-wrap: break-word;
+}
+.projects td, .projects th{
+	padding: 5px;
+}
+.projects tr:nth-of-type(odd){
+	background-color: white;
+}
+.projects tr:nth-of-type(even){
+	background-color: rgb(200, 200, 200);
+}
+.projects th{
+	background-color: rgb(150, 150, 150);
+	text-align: center;
+}
+.projects .object{
+	width: 30%;
+	background-color: white;
+}
+.projects .year{
+	width: 14%;
+}
+.projects_bar{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+.projects_bar figure{
+	flex: 1 0 150px;
+	position: relative;
+	margin: 0 1%;
+}
+.projects_bar figcaption{	
+	display: table;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 98%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .5);	
+	transition: all .2s linear;
+}
+.projects_bar figcaption p{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: rgba(220, 220, 220, 1);
+	font-family: Montserrat, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	padding: 5%;
+}
+.projects_bar figcaption:hover{	
+	background-color: rgba(50, 50, 50, .4);
+	color: white;
+}
+.project_object{
+	background-color: white;
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 1023 пикселов и ниже */
+@media (max-width: 1023px) {
+	
+}
+/* стили для ширины меньше компьютерных мониторов */
+/* стили для ширины 700 пикселов и ниже */
+@media (max-width: 699px) {
+
+}
+/* стили для ширины меньше фаблетов */
+/* стили для ширины 549 пикселов и ниже */
+@media (max-width: 549px) {	
+	.aboutUs h3{
+		border: none;
+	}	
+	.projects_bar{
+		display: block;
+	}
+	.projects_bar figure{	
+		margin: 10px auto;
+	}	
+	table.projects td, table.projects th{	
+		font-size: 1em;	
+	}
+}
